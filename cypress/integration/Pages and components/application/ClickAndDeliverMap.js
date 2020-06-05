@@ -1,9 +1,14 @@
 import GoogleMap from './GoogleMap';
 import DeliveryMethodModal from './DeliveryMethodModal';
 export default class ClickAndDeliverMap extends GoogleMap{
+    SearchField = '#react-google-places-autocomplete-input';
+
     DeliverHereButton = '.marker-popup>:nth-child(1)';
     getDeliverHereButton(){
         return this.DeliverHereButton;
+    }
+    getSearchField(){
+        return this.SearchField;
     }
     ChooseDeliveringAddress(){
         const Delivery_modal = new DeliveryMethodModal();

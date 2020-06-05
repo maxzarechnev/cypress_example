@@ -1,7 +1,7 @@
 export default class DeliveryMethodModal {
     ModifyButton = '#showDeliveryTypes';
-    HomeDeliveryButton = '.delivery-method__types > :nth-child(2)';
-    StoreDeliveryButton = '.delivery-method__types > :nth-child(3)';
+    HomeDeliveryButton = '#delivery-types-select > :nth-child(1)';
+    StoreDeliveryButton = '#delivery-types-select > :nth-child(2)';
 
     getModifyButton() {
         return this.ModifyButton;

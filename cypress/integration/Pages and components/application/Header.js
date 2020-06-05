@@ -1,5 +1,5 @@
-import HomePage from './HomePage';
-export default class Header extends HomePage{
+import MainPage from './MainPage';
+export default class Header extends MainPage{
     getLoginModalButton() {
         return `.create-account-link.b-auth-btn`;
     }
